@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Checker</title>
+  </head>
+  <body>
+    
+      <form class="first">
+        <label for="usrname">Username</label>
+        <input type="text" id="usrname" name="usrname" placeholder="Enter your username" required min="4" maxlength="20"/>
+        <label for="usrname">Email</label>
+        <input type="email" id="usrname" name="usrname" placeholder="Eg: jogn@example.com" />
+
+        <label for="psw"
+          >Password
+          <input
+            type="password"
+            id="psw"
+            name="psw"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            placeholder="Enter your password"
+            required
+          />
+        </label>
+        <label for="usrname">Birthday</label>
+        <input type="date" id="usrname" name="usrname"  />
+        <label for="cars">City:</label>
+
+<select name="cars" id="cars">
+  <option value="Mumbai">Mumbai</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Banglore">Banglore</option>
+  <option value="Kolkata">Kolkata</option>
+</select>
+
+
+
+  
+        
+      </form>
+      <form action="" class="second">
+        <h1>Programming Language</h1>
+        <input type="checkbox" id="C" name="C" value="C">
+        <label for="C"> C</label><br>
+        <input type="checkbox" id="C+" name="C+" value="C+">
+        <label for="C++"> C+</label><br>
+        <input type="checkbox" id="Java" name="Java" value="Java">
+        <label for="java"> Java</label><br><br>
+        <input type="checkbox" id="Javascript" name="javascript" value="javascript">
+        <label for="js"> Javascript</label><br>
+        <input type="checkbox" id="python" name="python" value="pyhton">
+        <label for="python">Python</label><br>
+        <button type="button"onclick="submit()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <div id="message">
+      <h3>Password must contain the following:</h3>
+      <p id="letter" class="invalid">A <strong>lowercase</strong> letter</p>
+      <p id="capital" class="invalid">
+        A <strong>capital (uppercase)</strong> letter
+      </p>
+      <p id="number" class="invalid">A <strong>number</strong></p>
+      <p id="length" class="invalid">Minimum <strong>8 characters</strong></p>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

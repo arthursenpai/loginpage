@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  flex-direction: row;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 30rem;
+  height: 50rem;
+  background-color: #120e43;
+  border-radius: 30px;
+  font-size: 18px;
+  box-shadow: 20px 20px 30px -10px rgba(0, 0, 0, 0.94);
+  padding: 20px;
+}
+
+.first input {
+  all: unset;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+}
+
+button {
+  all: unset;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 10px;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+
+button:hover {
+  box-shadow: inset 200px 0 0 0 #fff;
+  color: #120e43;
+}
+
+input[type="submit"] {
+  background-color: #120e43;
+  color: white;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  height: 50rem;
+  background-color: #120e43;
+  border-radius: 30px;
+  font-size: 18px;
+  box-shadow: 20px 20px 30px -10px rgba(0, 0, 0, 0.94);
+  padding: 20px;
+}
+.first select {
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+}
+.second {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+#message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  height: 20rem;
+  background-color: #120e43;
+  border-radius: 30px;
+  font-size: 18px;
+  box-shadow: 20px 20px 30px -10px rgba(0, 0, 0, 0.94);
+  padding: 20px;
+}
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.invalid {
+  color: green;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10004;";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
+}
